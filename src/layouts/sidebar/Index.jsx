@@ -8,22 +8,14 @@ import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import Drawer from '@mui/material/Drawer';
 import { ListItem, ListItemIcon } from '@mui/material';
-import { useTheme } from "@mui/material/styles";
-import Slide from "@mui/material/Slide";
 import SidebarItems from "./SidebarItems";
 import { ILogout, ISetting } from "../../utils/icons.utils";
-
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
 
 
 const drawerWidth = 75;
 
 export default function HomeSidebar(props) {
   const { window, children } = props;
-  let { navigation } = props
-  navigation = navigation === undefined ? true : false
   const [phoneNumberOpen, setMobileOpen] = React.useState(false)
   const handleDrawerToggle = () => {
     setMobileOpen(!phoneNumberOpen);
@@ -58,7 +50,6 @@ export default function HomeSidebar(props) {
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
-  const theme = useTheme();
   return (
     <Box >
       <CssBaseline />
@@ -136,7 +127,7 @@ export default function HomeSidebar(props) {
 
       <Box
         component="main"
-        className="xxl:pt-[0%] xl:pt-3 xlg:pt-14 lg:pt-[11%] md:pt-[12%] pt-[25%] bg-[#F5F7FB] px-7"
+        className=" pl-[8%]"
       >
         {children}
       </Box>
