@@ -134,3 +134,70 @@ export  const categoryData = [
       color: "#407BFF"
     }
   ];
+
+  export const allCustomersData = [
+    {
+      id: 1,
+      name: "John Doe",
+      customerId: "1DNFEA2",
+      category: "AGRIC CLIENT",
+      loanPeriod: "NOV 2020 - MAY 2021",
+      status: true
+    },
+    {
+      id: 2,
+      name: "Dorcas Gibss",
+      customerId: "1DNFEA3",
+      category: "MICRO TECH",
+      loanPeriod: "NOV 2020 - MAY 2021",
+      status: false
+    },
+    {
+      id: 3,
+      name: "Dan Mike",
+      customerId: "1DNFEA4",
+      category: "CORPORATES",
+      loanPeriod: "NOV 2020 - MAY 2021",
+      status: true
+    },
+    {
+      id: 4,
+      name: "Brown Jackson",
+      customerId: "1DNFEA6",
+      category: "RETAIL TECHS",
+      loanPeriod: "NOV 2020 - MAY 2021",
+      status: false
+    },
+    {
+      id: 5,
+      name: "Bright Johnson",
+      customerId: "1DNFEA8",
+      category: "RETAIL TECHS",
+      loanPeriod: "NOV 2020 - MAY 2021",
+      status: true
+    },
+    {
+      id: 5,
+      name: "Jon Bell",
+      customerId: "1DNFEA12",
+      category: "LOYALIST",
+      loanPeriod: "NOV 2020 - MAY 2021",
+      status: true
+    },
+    {
+      id: 5,
+      name: "Joe Bryan",
+      customerId: "1DNFEA15",
+      category: "CORPORATES",
+      loanPeriod: "NOV 2020 - MAY 2021",
+      status: false
+    },
+  ]
+
+  export const categoryColors = {
+    'AGRIC CLIENT': { background: '#C9ECE2', text: '#04674B' },
+    'MICRO TECH': { background: '#D4D9FF', text: '#2A38A4' },
+    'CORPORATES': { background: '#9BBAFF', text: '#002370' },
+    'RETAIL TECHS': { background: '#C4A2FC', text: '#2D0076' },
+    'LOYALIST': { background: '#FFE1C0', text: '#BE6402' },
+  };

@@ -33,13 +33,13 @@ const Dashboard = () => {
       <div className='grid grid-cols-2 gap-10 pr-10  mb-8'>
       <div className='mt-[12%] bg-[#FFF] py-5 pl-6 text-start '>
         <h3 className='text-[20px] font-[700]'>Total Population</h3>
-        <Box className="mt-10">
+        <Box className="mt-14">
           <PieChart />
         </Box>
       </div>
       <div className='mt-[12%] bg-[#FFF] py-5 pl-6 text-start text-[#292D32] '>
       <h3 className='text-[20px] font-[700] '>Active Clients <span className='text-[14px] font-[600]'>(percentage)</span></h3>
-        <Box className="mt-10">
+        <Box className="mt-14">
           <DoughnutChart />
         </Box>
       </div>
