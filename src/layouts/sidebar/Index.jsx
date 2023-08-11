@@ -40,12 +40,12 @@ export default function HomeSidebar(props) {
         })}
       </List>
       <ListItem className="absolute top-[100%]">
-            <Box >
-              <ListItemIcon>
-                <img src={ILogout} alt="logout" className=" w-[36px]" />
-              </ListItemIcon>
-            </Box>
-          </ListItem>
+        <Box >
+          <ListItemIcon>
+            <img src={ILogout} alt="logout" className=" w-[36px]" />
+          </ListItemIcon>
+        </Box>
+      </ListItem>
     </div>
   );
 
@@ -102,7 +102,7 @@ export default function HomeSidebar(props) {
           open={phoneNumberOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on phoneNumber.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },

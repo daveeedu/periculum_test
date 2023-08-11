@@ -37,32 +37,32 @@ const DatePicker = ({ label }) => {
                     <div className="absolute top-full text-start left-0 w-full mt-1 px-4 pb-4 bg-white z-0">
                         <h3 className='my-4 text-[14px] font-[700]'>Insert date range</h3>
                         <div className=''>
-                        <label htmlFor="startDate" className="block text-[12px] font-[500] text-[#363C4F]">
-                        Start date
-                        </label>
-                        <div className="mt-1">
-                            <input
-                            type="date"
-                            name="startDate"
-                            id="startDate"
-                            className="block w-full bg-[#E7EFFF] rounded-[5px] border-0 py-2 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                            placeholder="you@example.com"
-                            />
-                        </div>
+                            <label htmlFor="startDate" className="block text-[12px] font-[500] text-[#363C4F]">
+                                Start date
+                            </label>
+                            <div className="mt-1">
+                                <input
+                                    type="date"
+                                    name="startDate"
+                                    id="startDate"
+                                    className="block w-full bg-[#E7EFFF] rounded-[5px] border-0 py-2 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    placeholder="you@example.com"
+                                />
+                            </div>
                         </div>
                         <div className='my-3'>
-                        <label htmlFor="startDate" className="block text-[12px] font-[500] text-[#363C4F]">
-                        End date
-                        </label>
-                        <div className="mt-1">
-                            <input
-                            type="date"
-                            name="startDate"
-                            id="startDate"
-                            className="block w-full bg-[#E7EFFF] rounded-[5px] border-0 py-2 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                            placeholder="you@example.com"
-                            />
-                        </div>
+                            <label htmlFor="startDate" className="block text-[12px] font-[500] text-[#363C4F]">
+                                End date
+                            </label>
+                            <div className="mt-1">
+                                <input
+                                    type="date"
+                                    name="startDate"
+                                    id="startDate"
+                                    className="block w-full bg-[#E7EFFF] rounded-[5px] border-0 py-2 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    placeholder="you@example.com"
+                                />
+                            </div>
                         </div>
                         <button
                             type="button"

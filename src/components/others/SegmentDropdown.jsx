@@ -29,7 +29,7 @@ const SegmentDropdown = ({ label, value }) => {
         setSelectedValue(e.target.value);
     };
 
-   
+
 
     return (
         <div className="relative inline-block w-[100%]" ref={dropdownRef}>
