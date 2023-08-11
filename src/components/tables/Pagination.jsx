@@ -3,7 +3,7 @@ import { IBack, IDoubleBack, IDoubleForward, IForward } from '../../utils/icons.
 
 export default function Pagination() {
   return (
-    <nav className="flex  bg-white pt-3 pb-7 px-4 mr-14 sm:px-0">
+    <nav className="flex  bg-white pt-3 pb-7 px-4 md:mr-10 mr-4 sm:px-0 md:ml-0 ml-4">
       <div className="-mt-px flex w-0 flex-1 justify-end">
         <a
           href="#"

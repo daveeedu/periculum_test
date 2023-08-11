@@ -23,11 +23,11 @@ const SelectInput = ({ label, value, defaultValue, onChange, options }) => {
     }, []);
 
     return (
-        <div className="relative inline-block w-[35%]" ref={dropdownRef}>
+        <div className="relative inline-block lg:w-[35%] md:w-[45%] w-100 z-15" ref={dropdownRef}>
             <label className="text-sm font-medium text-gray-700">{label}</label>
             <div className="relative">
                 <div
-                    className="flex justify-between text-[15px] font-[500] text-[ #363C4F] block w-full mt-1 py-4 px-4 bg-white cursor-pointer"
+                    className="flex justify-between gap-1 md:text-[15px] text-[10px] font-[500] text-[ #363C4F] block w-full mt-1 py-5 px-3 bg-white cursor-pointer"
                     onClick={toggleOptions}
                 >
                     {value || defaultValue}
@@ -38,7 +38,7 @@ const SelectInput = ({ label, value, defaultValue, onChange, options }) => {
                         {options.map((option) => (
                             <div
                                 key={option.id}
-                                className="text-[18px] font-[700] text-[#000] text-start py-4 px-4  cursor-pointer"
+                                className="md:text-[18px] text-[10px] font-[700] text-[#000] text-start py-4 px-3 md:px-3 z-15 cursor-pointer"
                                 onClick={() => {
                                     onChange(option.value);
                                     toggleOptions();

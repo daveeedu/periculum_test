@@ -23,18 +23,18 @@ const DatePicker = ({ label }) => {
     }, []);
 
     return (
-        <div className="relative inline-block w-[25%]" ref={dropdownRef}>
+        <div className="relative inline-block xl:w-[25%] lg:w-[35%] md:w-[45%] w-100 md:mt-0  z-0" ref={dropdownRef}>
             <label className="text-sm font-medium text-gray-700">{label}</label>
             <div className="relative">
                 <div
-                    className="border border-[#407BFF] bg-transparent flex justify-between text-[15px] font-[500] text-[ #363C4F] block w-full mt-1 py-4 px-4 bg-white cursor-pointer"
+                    className="border border-[#407BFF] bg-transparent flex justify-between gap-1 md:text-[15px] text-[10px] font-[500] text-[ #363C4F] block w-full mt-1 py-4 md:px-4 px-3 bg-white cursor-pointer"
                     onClick={toggleOptions}
                 >
                     {"Loan Data Period"}
                     <img src={ICalendar} alt='IArrowDown' />
                 </div>
                 {isOpen && (
-                    <div className="absolute top-full text-start left-0 w-full mt-1 px-4 pb-4 bg-white ">
+                    <div className="absolute top-full text-start left-0 w-full mt-1 px-4 pb-4 bg-white z-0">
                         <h3 className='my-4 text-[14px] font-[700]'>Insert date range</h3>
                         <div className=''>
                         <label htmlFor="startDate" className="block text-[12px] font-[500] text-[#363C4F]">

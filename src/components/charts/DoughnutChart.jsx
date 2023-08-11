@@ -113,8 +113,8 @@ const DoughnutChart = () => {
   }, []);
 
   return (
-    <div className='pr-[30%] -ml-[22%] z-0'>
-      <div id="doughnutChart"  style={{ width: '620px', height: '330px' }}></div>
+    <div className='pr-[30%] xl:-ml-[20%] lg:ml-[0%] md:-ml-[20%] -ml-[5%] z-0'>
+      <div id="doughnutChart" className='md:w-[620px] ' style={{ height: '330px' }}></div>
     </div>
   );
 }

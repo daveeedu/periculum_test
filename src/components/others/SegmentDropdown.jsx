@@ -68,14 +68,14 @@ const SegmentDropdown = ({ label, value }) => {
                         {selectedValue === 'existing' ? (
                             <button
                                 type="button"
-                                className="bg-[#407BFF] w-full py-3 px-8 text-[] font-semibold text-white hover:bg-[#5488f8]"
+                                className="bg-[#407BFF] w-full py-3 px-8 text-[14px] font-semibold text-white hover:bg-[#5488f8]"
                             >
                                 Search
                             </button>
                         ) : (
                             <button
                                 type="button"
-                                className="bg-[#407BFF] w-full py-3 px-8 text-[] font-semibold text-white hover:bg-[#5488f8]"
+                                className="bg-[#407BFF] w-full py-3 px-8 text-[14px]  font-semibold text-white hover:bg-[#5488f8]"
                             >
                                 Add new customer
                             </button>

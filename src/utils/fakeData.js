@@ -111,17 +111,17 @@ export  const categoryData = [
     {
       id: 1,
       title: "Social Protection (SP)",
-      color: "#407BFF"
+      color: "#FFBC73"
     },
     {
       id: 2,
       title: "Education and Leadership Development (Education)",
-      color: "#407BFF"
+      color: "#4CAF50"
     },
     {
       id: 3,
       title: "Energy & Environment (EE)",
-      color: "#2A38A4"
+      color: "#FF725E"
     },
     {
       id: 4,

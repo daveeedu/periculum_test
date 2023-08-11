@@ -112,8 +112,8 @@ const PieChart = () => {
   }, []);
 
   return (
-    <div className='pr-[30%] -ml-[20%]'>
-      <div id="pieChart"  style={{ width: '620px', height: '330px' }}></div>
+    <div className='lg:pr-[30%] xl:-ml-[20%] lg:-ml-0 md:-ml-[20%] -ml-[5%] '>
+      <div id="pieChart" className='md:w-[620px]'  style={{  height: '330px' }}></div>
     </div>
   );
 }

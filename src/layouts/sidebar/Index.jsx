@@ -127,7 +127,7 @@ export default function HomeSidebar(props) {
 
       <Box
         component="main"
-        className=" pl-[8%]"
+        className=" xl:pl-[8%] lg:pl-[11%] md:pl-[15%]"
       >
         {children}
       </Box>

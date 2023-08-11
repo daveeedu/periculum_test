@@ -29,7 +29,7 @@ const AllCustomers = () => {
 			"Customer Id": d?.customerId || "N/A",
 			"Category": (
         <div
-          className="py-4 px-3 w-[80%] text-center"
+          className="py-4 px-3 text-center"
           style={{
             backgroundColor: categoryStyle.background || 'transparent',
             color: categoryStyle.text || '#000',
@@ -99,11 +99,11 @@ const AllCustomers = () => {
 
   return (
     <HomeLayout>
-      <div className='mt-[7%] text-start'>
-        <h1 className='text-[24px] font-[700] text-#000000'>All Customers</h1>
+      <div className='lg:mt-[7%] md:mt-[12%] mt-[20%] text-start pl-8 md:pl-0'>
+        <h1 className='text-[24px] font-[700] text-#000000 '>All Customers</h1>
       </div>
-      <div className='flex justify-between mt-4 pr-10'>
-        <div className='grid grid-cols-6 gap-4 w-[40%] '>
+      <div className='md:flex md:justify-between mt-4 pr-10'>
+        <div className='grid grid-cols-6 gap-4 xl:w-[40%] lg:w-[60%] md:w-[80%] w-100 md:pl-0 pl-8 md:mb-0 mb-8'>
           <div className='col-span-4'>
             <SegmentDropdown
               value={selectedValue}
@@ -112,14 +112,14 @@ const AllCustomers = () => {
           </div>
           <button
             type="button"
-            className="bg-[#DCE5FF] col-span-2 h-[90%] w-[70%] mt-1 py-3 px-8 text-[#407BFF] font-semibold hover:bg-[#d7dffa]"
+            className="bg-[#DCE5FF] col-span-2 h-[90%] md:w-[70%] w-100 mt-1 py-3 px-8 text-[#407BFF] font-semibold hover:bg-[#d7dffa]"
           >
             Clear
           </button>
         </div>
         <button
           type="button"
-          className="bg-[#407BFF] flex justify-center gap-3  h-[90%] py-4 px-6 text-white font-semibold hover:bg-[#3d78f7]"
+          className="bg-[#407BFF] flex justify-center gap-3  h-[90%] py-4 px-6 ml-8 md:ml-0 text-white font-semibold hover:bg-[#3d78f7]"
           onClick={openModal}
         >
           <img src={IFilter} alt='IFilter' className='mt-1' />
@@ -130,7 +130,7 @@ const AllCustomers = () => {
       <CustomTable {...{data: data, tableClass: "border-separate border-spacing-y-2",}}/>
       <Pagination />
       </div>
-      <h3 className='text-[20px] font-[600] text-start uppercase text-[#363C4F]'>Bank Profile Comparison</h3>
+      <h3 className='text-[20px] font-[600] text-start uppercase text-[#363C4F] pl-4 md:pl-0'>Bank Profile Comparison</h3>
       <div className='mb-10'>
       <CustomTable {...{data: dataTwo, tableHeaderClass: "bg-white border-b-2 border-[#407BFF]"}}/>
       </div>
@@ -140,7 +140,7 @@ const AllCustomers = () => {
       <CustomModal isModalOpen={isModalOpen} closeModal={closeModal} title="Select Category">
         <CheckboxGroup options={categoryData} />
         <span className="text-[14px] font-[600] text-[#000]">Select Loan Period</span>
-        <div className='grid grid-cols-2 gap-4'>
+        <div className='md:grid md:grid-cols-2 gap-4'>
         <div className='my-4'>
                             <label htmlFor="startDate" className="block text-[12px] font-[500] text-[#000000]">
                                 Start date
@@ -171,10 +171,10 @@ const AllCustomers = () => {
                         </div>
         </div>
         
-        <div className=''>
+        <div className='flex md:justify-start justify-center'>
           <button
             type="button"
-            className="bg-[#407BFF]  py-3 px-8 text-[] font-semibold text-white hover:bg-[#5488f8]"
+            className="bg-[#407BFF]  py-3 md:px-8 px-3 text-[14px] font-semibold text-white hover:bg-[#5488f8]"
           >
             Apply filter
           </button>
