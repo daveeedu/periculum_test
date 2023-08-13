@@ -9,8 +9,8 @@ export default function Pagination() {
           href="#"
           className="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
         >
-          <img src={IDoubleForward} className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
-          <img src={IForward} className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+          <img src={IDoubleForward} alt='IDoubleForward' className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+          <img src={IForward} alt='IForward' className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
         </a>
       </div>
       <div className="hidden md:-mt-px md:flex">
@@ -30,8 +30,8 @@ export default function Pagination() {
           href="#"
           className="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
         >
-          <img src={IBack} className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
-          <img src={IDoubleBack} className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+          <img src={IBack} alt="IBack" className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+          <img src={IDoubleBack} alt='IDoubleBack' className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
         </a>
       </div>
     </nav>

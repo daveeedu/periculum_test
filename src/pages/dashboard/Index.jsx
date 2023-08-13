@@ -114,7 +114,7 @@ const Dashboard = () => {
             <h3 className='text-[20px] font-[700] text-white'>The Agric Clients</h3>
           </div>
           <Box className="ml-6">
-            <BarChart id="barChart_1" />
+            <BarChart id="agricClientsChart" />
           </Box>
         </div>
 
@@ -124,7 +124,7 @@ const Dashboard = () => {
             <h3 className='text-[20px] font-[700] text-white'>The Micro Techs</h3>
           </div>
           <Box className="ml-6">
-            <BarChart id="barChart_2" />
+            <BarChart id="microTechsChart" />
           </Box>
         </div>
 
@@ -134,7 +134,7 @@ const Dashboard = () => {
             <h3 className='text-[20px] font-[700] text-white'>The Corporates</h3>
           </div>
           <Box className="ml-6">
-            <BarChart id="barChart_3" />
+            <BarChart id="corporatesChart" />
           </Box>
         </div>
       </div>
@@ -146,7 +146,7 @@ const Dashboard = () => {
             <h3 className='text-[20px] font-[700] text-white'>The Retail Techs</h3>
           </div>
           <Box className="mx-6">
-            <BarChart id="barChart_4" />
+            <BarChart id="retailTechsChart" />
           </Box>
         </div>
 
@@ -156,7 +156,7 @@ const Dashboard = () => {
             <h3 className='text-[20px] font-[700] text-white'>The Loyalists</h3>
           </div>
           <Box className="mx-6">
-            <BarChart id="barChart_5" />
+            <BarChart id="loyalistsChart" />
           </Box>
         </div>
       </div>
