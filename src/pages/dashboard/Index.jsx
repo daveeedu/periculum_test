@@ -22,7 +22,7 @@ const Dashboard = () => {
         <h1 className='text-[24px] font-[700] text-#000000'>Welcome to your Dashboard</h1>
       </div>
 
-      <div className='flex justify-between mt-4 md:pr-10 md:pl-0 pl-4 pr-2 z-10'>
+      <div className='md:flex md:justify-between grid grid-cols-2   mt-4 md:pr-10 md:pl-0 pl-4 pr-2 z-10'>
         <SelectInput
           defaultValue={segmentationAnalysisData.find(option => option.id === 1)?.value}
           value={selectedValue}

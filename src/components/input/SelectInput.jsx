@@ -23,7 +23,7 @@ const SelectInput = ({ label, value, defaultValue, onChange, options }) => {
     }, []);
 
     return (
-        <div className="relative inline-block lg:w-[35%] md:w-[45%] w-100 z-15" ref={dropdownRef}>
+        <div className="relative inline-block lg:w-[35%] md:w-[45%] w-[90%] z-15" ref={dropdownRef}>
             <label className="text-sm font-medium text-gray-700">{label}</label>
             <div className="relative">
                 <div
