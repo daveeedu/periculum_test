@@ -10,7 +10,8 @@ import Drawer from '@mui/material/Drawer';
 import { ListItem, ListItemIcon } from '@mui/material';
 import SidebarItems from "./SidebarItems";
 import { ILogout, ISetting } from "../../utils/icons.utils";
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { GrClose } from "react-icons/gr";
 
 const drawerWidth = 75;
 
@@ -25,15 +26,16 @@ export default function HomeSidebar(props) {
     <div className="">
       <Toolbar>
       </Toolbar>
+      <div className="md:hidden block ml-7">
       <IconButton
-        color="inherit"
+        color="#A0BDFF"
         aria-label="open drawer"
         edge="start"
         onClick={handleDrawerToggle}
-        sx={{ mr: 2, display: { sm: 'none' } }}
       >
+        <GrClose />
       </IconButton>
-
+      </div>
       <List className="">
         {links.map((link, index) => {
           return <SidebarItems {...{ link }} key={index} />
@@ -64,6 +66,17 @@ export default function HomeSidebar(props) {
         }}
       >
         <Toolbar>
+        <div className="md:hidden block text-white">
+      <IconButton
+        color="inherit"
+        aria-label="open drawer"
+        edge="start"
+        onClick={handleDrawerToggle}
+        sx={{ mt: 1, mr: 1 }}
+      >
+        <GiHamburgerMenu />
+      </IconButton>
+      </div>
           <Box className=" m-auto  w-full">
             <Box className="flex justify-between">
               <div className="pt-2">
