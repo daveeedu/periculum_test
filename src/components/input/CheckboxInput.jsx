@@ -19,7 +19,7 @@ const CheckboxGroup = ({ options, onChange }) => {
     return (
         <div className=" grid md:grid-cols-5 md:grid-rows-1 grid-cols-1 grid-rows-4 -mt-5 mb-8">
             {options.map((option) => (
-                <label key={option.value} className=" flex gap-1 ">
+                <label key={option.value} className=" flex gap-1 md:mb-0 mb-2">
                     <input
                         type="checkbox"
                         value={option.value}

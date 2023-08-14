@@ -14,7 +14,7 @@ const CustomModal = ({ children, isModalOpen, closeModal, title }) => {
         open={isModalOpen}
         onClose={closeModal}
         aria-labelledby="responsive-dialog-title"
-        className="p-10 m-8"
+        className="md:p-10 m-8"
         fullWidth
         TransitionComponent={Transition}
       >
